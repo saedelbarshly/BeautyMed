@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --main-color: #BA3871;
+    --second-color: #DDA0B1
+}
+
+
+body {
+    font-family: " -apple-system", system-ui, "BlinkMacSystemFont", "Segoe UI", "Roboto"
+}
+
+
+header nav {
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+}
+
+header nav .nav-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: fit-content;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0 15px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+
+.page-content {
+    min-height: calc(100vh - 344px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.page-content .form {
+    padding: 30px;
+}
+
+.page-content .form h5 {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.page-content .form form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.page-content .info {
+    padding: 30px;
+}
+
+.page-content .info .logo {
+    width: 250px;
+    margin-bottom: 30px;
+
+}
+
+h2.title {
+    color: var(--main-color);
+    position: relative;
+    text-align: start;
+    margin-bottom: 25px;
+
+    font-weight: 700;
+}
+
+@media(min-width:768px) {
+    h2.title {
+        letter-spacing: 1.5px;
+    }
+}
+
+h2.title::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 1px;
+    width: 80px;
+    background-color: var(--main-color);
+}
+
+p.description {
+    line-height: 1.7;
+    color: #0f0f0f;
+}
+
+
+.input-group-append {
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--second-color);
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--main-color);
+}
+
+input,
+select,
+textarea,
+button {
+    box-shadow: none !important;
+}
+
+.form-floating>label {
+    color: #5a5a5a !important;
+}
+
+
+
+footer {
+    background: #2A3438;
+}
+
+footer .middle-space {
+    background: #3A4346;
+    padding: 70px 0;
+}
+
+p.copyright {
+    padding: 50px 0;
+    color: #e5e5e5;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+p.copyright a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+p.copyright a:hover {
+    text-decoration: underline;
+}
